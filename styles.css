@@ -1,83 +1,36 @@
 body {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
+  margin: 0px;
 }
-/*------Grid Container---------*/
-.gridContainer {
-  max-height: 50%;
-  max-width: 50%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  border: gray 1px solid;
+
+#gridWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 512px;
+  height: 512px;
 }
 
 .cell {
-  background-color: lightgray;
-  width: 50px;
-  height: 50px;
-  
-  border: gray 1px solid;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  background-color: #F0EDB4;
 }
 
-
-/*---------------Color Display------------*/
-.colorEditor{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#colorHeader{
-    text-align: center;
-}
-
-/* color buttons  */
-#buttonDisplay{
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
-}
-
-#displayColors{
-    display: flex;
-    justify-content: space-around;
-    width: 40vw;
+#colorButtonWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
 }
 
 .colorButton {
-  height: 50px;
   width: 50px;
+  height: 50px;
 }
 
-#red {
-  background-color: red;
-}
-
-#blue {
-  background-color: blue;
-}
-
-#green {
-  background-color: green;
-}
-
-#yellow {
-  background-color: yellow;
-}
-
-#violet {
-  background-color: violet;
-}
-
-/* Other Buttons */
-#otherControls{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-
+#colorIndicator {
+  width: 50px;
+  height: 50px;
 }
