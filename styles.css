@@ -1,9 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   height: 100vh;
   margin: 0px;
+  background-color: rgb(105, 105, 110);
+  font-family: "Roboto", sans-serif;
 }
 
 #gridWrapper {
@@ -11,26 +15,56 @@ body {
   flex-wrap: wrap;
   width: 512px;
   height: 512px;
+  border: 1px solid gray;
 }
 
 .cell {
   box-sizing: border-box;
   border: 1px solid gray;
-  background-color: #F0EDB4;
+  background-color: #32446b;
 }
 
 #colorButtonWrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 150px;
+  width: 225px;
 }
 
 .colorButton {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 #colorIndicator {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
+}
+
+#controlsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fillButton {
+  margin-top: 30px;
+}
+
+#selectedColor {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#colorIndicator {
+  margin-bottom: 15px;
+}
+
+#header,
+#selectedColor {
+  color: #d5e1ff;
+}
+
+#sizeInput {
+  width: 120px;
+  margin-top: 10px;
 }
